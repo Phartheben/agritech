@@ -1,0 +1,26 @@
+<ion-view title="My Bids" id="page2">
+    <ion-content padding="true" style="background: url(img/whitebg.jpg) no-repeat center;background-size:cover;" class="has-header">
+        <div class="spacer" style="width: 300px; height: 21px;"></div>
+        <div>
+            <img src="img/farmer.jpeg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <table style="width:100%">
+            <thead>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Weight</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="value in mypets">
+                <td>{{value.name}}</td>
+                <td>{{value.species}}</td>
+                <td>{{value.addcomments}}</td>
+                <td>{{value.weight}}</td>
+            </tr>
+                <a ui-sref="menu.addAPet()" id="myPets-button19" class="button button-calm button-block icon-left ion-android-add">
+                Your bidding starts here</a>
+            
+
+    </ion-content>
+</ion-view>

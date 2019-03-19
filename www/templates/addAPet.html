@@ -1,0 +1,57 @@
+<ion-view title="Bids@Farmersell" id="page9">
+  <ion-content padding="true" style="background: url(img/whitebg.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <h5 id="addAPet-heading3" style="color:#000000;">Welcome to bidding area!</h5>
+    <div>
+      <img src="img/bid.jpg" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div>
+      
+    </div>
+    <form id="addAPet-form8" class="list">
+      <!-- <button ng-click="addpet()" id="requestAnAppointment-button6" class="button button-calm button-block icon-left ion-android-add">Add your picture here</button> -->
+      <label class="item item-input" id="addAPet-textarea1" name="petname">
+        <span class="input-label">Name : </span><textarea placeholder="place the items name here" ng-model="data.name"></textarea></label>
+    </form>
+    <h5 id="addAPet-heading4" style="color:#000000;">Date you plan to start the bidding : </h5>
+    <form id="addAPet-form10" class="list">
+      <label class="item item-input" id="addAPet-input16">
+        <span class="input-label">Date</span>
+        <input type="date" placeholder="Choose date here" ng-model="data.birthdate">
+      </label>
+    </form>
+    <form id="addAPet-form11" class="list">
+      <label class="item item-select" id="addAPet-select2">
+        <span class="input-label">Type</span>
+        <select ng-model="data.species" ng-options="spec for spec in speciess"> </select>
+      </label>
+      <!-- <label class="item item-select" id="addAPet-select3">
+        <span class="input-label">Gender</span>
+        <select ng-model="data.gender" ng-options="gen for gen in genders"> </select>
+      </label> -->
+      <label class="item item-input" id="addAPet-input18">
+        <span class="input-label">Your bid starts at : RM</span>
+        <input type="text" placeholder="Price" ng-model="data.addcomments">
+      </label>
+     <!--  <button id="addAPet-button23" class="button button-positive button-block icon-left ion-camera">Pick or take a photo</button> -->
+      <div class="item item-body" id="addAPet-list-item-container7">
+        <ion-list id="addAPet-list10">
+          <ion-item class="item-divider" id="addAPet-list-item-divider6"> Item Weight</ion-item>
+          <label class="item item-input" id="addAPet-input19">
+            <span class="input-label">Kg(s)</span>
+            <input type="text" placeholder="" ng-model="data.weight">
+          </label>
+        </ion-list>
+      </div>
+      <!-- <ion-toggle toggle-class="toggle-positive" id="addAPet-toggle9">Mark as inactive</ion-toggle> -->
+       <tr ng-repeat="value in mypets">
+                <td>{{value.name}}</td>
+                <td>{{value.birthdate}}</td>
+                <td>{{value.species}}</td>
+                <td>{{value.gender}}</td>
+                <td>{{value.weight}}</td>
+                <td>{{value.addcomments}}</td>
+            </tr>
+    </form>
+     <button ng-click="addpet()" id="requestAnAppointment-button6" class="button button-calm button-block icon-left ion-android-add">Add your picture here</button>
+  </ion-content>
+</ion-view>

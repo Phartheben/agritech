@@ -1,0 +1,45 @@
+<ion-view title="Order Fertilizers" id="page11">
+    <ion-content padding="true" style="background: url(img/nEjeQnMGSnGN6OUcAmOT_Color20Burst202.jpg) no-repeat center;background-size:cover;" class="has-header">
+     <div class="spacer" style="width: 300px; height: 21px;"></div>
+       
+        <form id="orderFoodOrPrescription-form18" class="list">
+            <label class="item item-input" id="orderFoodOrPrescription-input24">
+                <span class="input-label">Name</span>
+                <h2>{{user_info.displayName}}</h2>
+            </label>
+        </form>
+        <form id="orderFoodOrPrescription-form19" class="list">
+            <label class="item item-select" id="orderFoodOrPrescription-select7">
+                <span class="input-label">Request</span>
+                <select ng-model="data.request" ng-options="req for req in requests"></select>
+            </label>
+            <div class="spacer" style="width: 300px; height: 6px;"></div>
+            <label class="item item-input" id="orderFoodOrPrescription-input22">
+                <span class="input-label">Name of Product</span>
+                <input type="text" placeholder="" ng-model="data.productname">
+            </label>
+            <div class="spacer" style="width: 300px; height: 6px;"></div>
+            <label class="item item-input" id="orderFoodOrPrescription-input25">
+                <span class="input-label">Pickup Date</span>
+                <input type="date" placeholder="" ng-model="data.pickdate">
+            </label>
+            <label class="item item-select" id="orderFoodOrPrescription-select8" name="Preferred Time">
+                <span class="input-label">Preferred Time</span>
+                <select ng-model="data.picktime" ng-options="time for time in times"></select>
+            </label>
+            <label class="item item-input" id="orderFoodOrPrescription-input26">
+                <span class="input-label">Additional Comments</span>
+                <input type="text" placeholder="" ng-model="data.addcomments">
+            </label>
+        </form>
+         <tr ng-repeat="value in myorders">
+                <td>{{value.foodpic}}</td>
+                <td>{{value.request}}</td>
+                <td>{{value.productname}}</td>
+                <td>{{value.pickdate}}</td>
+                <td>{{value.picktime}}</td>
+                <td>{{value.addcomments}}</td>
+            </tr>
+        <button ng-click="placeOrder()" id="orderFoodOrPrescription-button7" class="button button-stable button-block">Place Order</button>
+    </ion-content>
+</ion-view>

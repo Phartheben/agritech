@@ -1,0 +1,74 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-dark">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-content padding="false" style="top:0px !important;" class="side-menu-left ">
+            <ion-list id="menu-list1">
+                <ion-item class="item-avatar" id="menu-list-item21" ui-sref="menu.account()" menu-close="">
+                    <img ng-src="img/farmerman.jpg">
+                    <h2>{{user_info.displayName}}</h2>
+                    <p style="white-space:normal;">{{user_info.email}}</p>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item1" ui-sref="menu.home()" menu-close="">Home
+                    <i class="icon ion-ios-home"></i>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item2" ui-sref="menu.myPets()" menu-close="">My Bids
+                    <i class="icon ion-hammer"></i>
+                </ion-item>
+                <ion-item class="item-divider" id="menu-list-item-divider2"> </ion-item>
+            </ion-list>
+            <ion-list id="menu-list4">
+                <ion-item class="item-icon-left" id="menu-list-item3" ui-sref="menu.notifications()" menu-close="">Notifications
+                    <i class="icon ion-chatbox-working"></i>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item4" ui-sref="menu.requestAnAppointment()" menu-close="">Pricing Forecast
+                    <i class="icon ion-android-calendar"></i>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item5" ui-sref="menu.orderFoodOrPrescription()" menu-close="">Order Fertilizers
+                    <i class="icon ion-spoon"></i>
+                </ion-item>
+                <ion-list id="menu-list5">
+                    <ion-item class="item-icon-left" id="menu-list-item9" ui-sref="menu.selfieShots()" menu-close=""> My Transportations
+                        <i class="icon ios-settings"></i>
+                    </ion-item>
+                    <ion-item class="item-icon-left" id="menu-list-item10" href-inappbrowser="https://drive.google.com/open?id=1tGSVsNjwTWj4nudFyClCscd4wxlopD4c">Land Scan AR
+                        <i class="icon ion-ios-camera"></i>
+                    </ion-item>
+                    <!-- <ion-item class="item-icon-left" id="menu-list-item17" href-inappbrowser="http://animalhospital.com.my">About Us &amp; Our Services
+                        <i class="icon ion-ios-bookmarks"></i>
+                    </ion-item>
+                    <ion-item class="item-icon-left" id="menu-list-item12" href-inappbrowser="http://www.petpoisonhelpline.com/poisons/">Poison Control
+                        <i class="icon ion-medkit"></i>
+                    </ion-item>
+                    <ion-item class="item-icon-left" id="menu-list-item11" href-inappbrowser="http://animalhospital.com.my/news-events/event-schedule/#">News &amp; Events
+                        <i class="icon ion-chatboxes"></i>
+                    </ion-item> -->
+                    <ion-item class="item-divider" id="menu-list-item-divider3"> User Details</ion-item>
+                    <ion-item class="item-icon-left" id="menu-list-item13" ui-sref="menu.account()" menu-close="">Account &amp; Settings
+                        <i class="icon ion-android-person"></i>
+                    </ion-item>
+                    <ion-item class="item-divider" id="menu-list-item-divider1"> Social</ion-item>
+                </ion-list>
+                <ion-item class="item-icon-left" id="menu-list-item15" href-inappbrowser="https://www.facebook.com/pages/Hospital-Veterinary-Subang-Animal-Clinic/371927019651193">Facebook
+                    <i class="icon ion-social-facebook"></i>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item16" href-inappbrowser="https://www.instagram.com/riverviewanimal/">Instagram
+                    <i class="icon ion-social-instagram"></i>
+                </ion-item>
+                <ion-item class="item-icon-left" id="menu-list-item20" href-inappbrowser="https://www.youtube.com/user/WWFMy">Youtube
+                    <i class="icon ion-social-youtube"></i>
+                </ion-item>
+                <ion-item ng-click="logout()" data-componentid="list-item7" style="" id="menu-list-item7" class="item-icon-left  ">
+                        <i class="icon ion-log-out"></i>Logout</ion-item>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,27 @@
+$dark: #1B1616;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+ion-view,.pane,.view {
+	background-color: #0E155D;
+}
+
+body.platform-ios {
+	font-family: Raleway, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Raleway, sans-serif;
+}
+
+body.platform-android {
+	font-family: Raleway, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Raleway, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

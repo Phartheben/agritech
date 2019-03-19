@@ -1,0 +1,36 @@
+<ion-view title="Notifications" id="page3">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="notifications-list9">
+            <ion-item ng-repeat="item in assetCollection track by $index">
+                <p> {{$index}} - {{item.name}}</p>
+                <p>{{item.lastUpdated | date: 'medium'}}</p>
+                <!-- display the image -->
+                <img ng-src={{item.URL}} width="180px" class="padding" />
+            </ion-item>
+            <div class="item item-body" id="notifications-list-item-container8">
+                <h2 id="notifications-heading7" style="color:#000000;">April had her baby giraffe and it's adorable!</h2>
+            </div>
+            <div class="item item-body" id="notifications-list-item-container11">
+                <h2 id="notifications-heading8" style="color:#000000;">RM50 off dentals this week only!</h2>
+            </div>
+            <div class="item item-body" id="notifications-list-item-container12">
+                <h2 id="notifications-heading9" style="color:#000000;">WVC Alert! RM50 off Dentals this week only!</h2>
+            </div>
+            <div class="item item-body" id="notifications-list-item-container13">
+                <div>
+                    <img src="img/8XTZ4a6bSRaQ081KZXnr_dog.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                </div>
+                <h2 id="notifications-heading11" style="color:#000000;">Don't forget to give your parasite prevention today!</h2>
+            </div>
+            <div class="item item-body" id="notifications-list-item-container14">
+                <div>
+                    <img src="img/ZhWscXRYST2tWxvjUvEK_cat.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                </div>
+                <h2 id="notifications-heading12" style="color:#000000;">Amber Alert! Lost pet. Please help find Meowwyy. He was last seen at INTI Park at 9am.</h2>
+                <div id="notifications-markdown16" class="show-list-numbers-and-dots">
+                    <p style="color:#696262;">Call his mother if you see her at 012-3456789</p>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
